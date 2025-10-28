@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omegabørs</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.cdnfonts.com/css/old-english-five?styles=60026" rel="stylesheet">
+                
+</head>
+<body>
+    <header class="sticky-header">
+        <img src="media/logo.png" alt="Phinanscom" id="logo">
+        <h1 id="overskrift">Omegabørs</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="graph-section">
+                <br>
+                <br>
+                <select id="graph-selector">
+                    <option value="PhinansCommiteen">PhinansCommiteen</option>
+                    <option value="HeutteCommiteen">HeutteCommiteen</option>
+                    <option value="Contactor">Contactor</option>
+                    <option value="Sport og Spill">Sport og Spill</option>
+                    <option value="LophtCommiteen">LophtCommiteen</option>
+                    <option value="SosialCommiteen">SosialCommiteen</option>
+                    <option value="PhaestCommiteen">PhaestCommiteen</option>
+                    <option value="Hovedstyret">Hovedstyret</option>
+                    <option value="BlaesteCommiteen">BlaesteCommiteen</option>
+                    <option value="Vevcom">Vevcom</option>
+                    <option value="OmBul">OmBul</option>
+                    <option value="Kielder">Kielder</option>
+                    <option value="OmegaBand">OmegaBand</option>
+                    <option value="Dei Taktlause">Dei Taktlause</option>
+                    <option value="Omega Verksted">Omega Verksted</option>
+                    <option value="HaandbryggerCommiteen">HaandbryggerCommiteen</option>
+                    <option value="LocomotivCommiteen">LocomotivCommiteen</option>
+                    <option value="Omegarevyen">Omegarevyen</option>
+                    <option value="Mikrokortrollene">Mikrokortrollene</option>
+                    <option value="Det Gamle Raad">Det Gamle Raad</option>
+                    <option value="Fadderstyret">Fadderstyret</option>
+
+                </select>
+                <canvas id="graph"></canvas>
+                <div class="info-box">
+                    <p style="font-size: larger;">Siste uke: <span id="weekly-change"></span></p>
+                    <p>Siste måned: <span id="monthly-change"></span></p> 
+                </div>
+            </div>
+
+            <div class="news-section">
+                <h2>Omegabørs har tatt eksamensperiode</h2>
+                
+               
+                <ul class="circle-points">
+                    <li>
+                        <button id="archive-btn" onclick="window.location.href='archive.html'">Nyhetsarkiv</button>
+                    </li>
+                </ul>  
+                
+            </div>
+
+            <div class="table-section">
+                <h2>Ukentlig endring og aksjepris</h2>
+                <h3 id="ukas-vinner-h3">Ukas vinner: <span id="uke-vinner"></span></h3> 
+
+                <table id="ukentlig-endring-tabell">
+                    <tbody id="tbody"><!-- RADER --></tbody>
+                </table>
+
+            </div>
+
+            <div class="info">
+                <h2>Hva er Omegabørs?</h2>
+                <p>
+                    Omegabørs er en virtuell børs laget av Phinanscom, der alle omegas komiteer er børsnotert.
+                    Alle komiteene starter hvert semester med en aksjepris på 100kr, der aksjen kan gå opp/ned dersom 
+                    komiteen gjør bra/"dårlige" ting. For eksempel kan et bra arrangement gjøre at aksjen stiger, mens 
+                    en tabbe kan gi nedgang.
+                </p>
+                <p>
+                    <span style="font-weight: 600;">Hensikten</span> med Omegabørs er å lære bort enkle prinsipper om hvordan en børs fungerer.
+                    I tillegg håper vi det motiverer Omegas komiteer til å gjøre bra ting slik at aksjen deres stiger. 
+                </p>
+                <p style="font-size: larger; ">
+                    Merk at grunnlaget for oppgang er som oftest basert på reelle ting, mens nedgang er nesten alltid basert på tull. 
+                </p>
+
+                <br><br>
+                <h2>FAQ</h2>
+                <ul class="circle-points">
+                    <li><svg class="circle" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg>
+                         <span style="font-weight: 600;">Når oppdateres børsen?</span> På søndager, og "Ukens nyheter" vil være nyheter fra uken som var.
+                    </li>
+                    <li><svg class="circle" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg> 
+                        <span style="font-weight: 600;">Hvem administrerer børsen?</span> Børsen er laget og styres av Phinanscom.
+                    </li>
+                    <li><svg class="circle" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg> 
+                        <span style="font-weight: 600;">Hva viser grafen?</span> Grafen viser aksjeprisen til valgt komite i kroner for hver uke.
+                    </li>
+                </ul>
+
+                <br> <br><br><br><br><br>
+                <h2></h2>
+                <p>
+                    Tips oss gjerne om komiteer som har gjort noe bra/dårlig.
+                </p>
+                <p>
+                    Send oss en mail på omegabors@phinans.com eller en DM på instagram @phinanscom. 
+                </p>
+
+
+                    
+            </div>
+        </div>
+    </main>
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+                

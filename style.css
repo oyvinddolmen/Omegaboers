@@ -1,0 +1,276 @@
+@import url('https://fonts.cdnfonts.com/css/old-english-five?styles=60026');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; 
+    color: #2e2e2e;
+}
+
+.news-section h2 {
+    position: relative;
+    padding-right: 100px; /* Adjust the padding to create space for the button */
+}
+
+#archive-btn {
+    position: relative;
+    /*top: 0;*/
+    /*right: 0; */ /* Align the button to the right of the h2 */
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust the font size if needed */
+}
+
+.back-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remove default underline for links */
+    z-index: 999; /* Ensure the button appears above other content */
+}
+
+.back-btn:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+
+
+
+header {
+    background-color: #000000;
+    color: #ffffff; 
+    text-align: center;
+    padding: 0;
+    position: relative;
+}
+
+main {
+    display: flex;
+    margin: 100px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: large;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+#ukas-vinner-h3 {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* ID STYLE */
+
+#logo {
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+    height: 70%;
+}
+
+#overskrift {
+    margin: 0;
+    font-family: 'Old English Five', sans-serif;
+    font-size: 30px; 
+    padding: 12px;
+}
+
+
+.sticky-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; 
+    z-index: 100; 
+}
+
+
+/* GRAF STYLE */
+
+.graph-section, .news-section  {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 49%;
+    box-sizing: border-box;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+
+
+.table-section, .info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 49%;
+    box-sizing: border-box;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 10px;
+}
+
+
+/* NYHETER */
+.article-container {
+    width: 100%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+.article {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 0px;
+}
+.article img {
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+.article-content {
+    flex: 1;
+}
+
+.aksje_opp_ned {
+    width: 10%;
+    align-items: left;
+}
+
+.news-img {
+    box-shadow: 0 4px 6px rgba(0,0,0,.16);
+}
+
+
+/* Tabell ukentlig endring */
+#ukentlig-endring-tabell {
+    border-collapse: collapse; 
+    margin: 20px 0; 
+}
+
+#tbody td {
+    padding: 8px 12px; 
+    border: 1px solid #ddd; 
+}
+
+/* Annenhver rad */
+#tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.right-column {
+    text-align: right;
+}
+
+
+#ukens-vinner-img {
+    max-width: 10vw;       
+}
+
+
+
+
+select {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333; 
+}
+
+select:focus {
+    outline: none;
+}
+
+canvas {
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+
+
+@media (max-width: 1000px) {
+    .news-section, .graph-section, .table-section, .ukens-vinner, .info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 5px;
+    }
+
+    .graph-section {
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0.5%;
+        padding: 0;
+    }
+
+
+.info-box {
+    padding: 10px;
+}
+
+    
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px; 
+    fill: #000; 
+  }
+
+
+#submit-btn {
+    height: 30px;
+    width: 90px;
+}
+
+.bckg-color {
+    background-color: grey;
+}
+
+
